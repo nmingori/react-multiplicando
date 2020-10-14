@@ -17,6 +17,12 @@ body {
   background-color: #f5f5f5;
 }
 
+.game-container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px;
+}
+
 .game-name {
   font-family: 'Bangers';
   font-size: 44px;
@@ -26,11 +32,56 @@ body {
   margin: 0 auto 18px;
 }
 
-.game-container {
-  text-align: center;
-  margin: 0 auto;
-  padding: 30px;
+.text-menu {
+  font-size: 18px;
 }
+
+.select-tables {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 340px;
+}
+
+.select-tables li {
+  margin: 12px;
+}
+
+.select-tables li label {
+  font-family: 'Bangers';
+  font-size: 32px;
+  margin-left: 6px;
+}
+
+.disabled-num {
+  color: #999;
+}
+
+.btn-start-game {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #fa8231;
+  padding: 10px 18px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px #999;
+  border: none;
+}
+
+.btn-start-game:hover {
+  box-shadow: 1px 1px 2px #ccc;
+}
+
+.btn-start-game:disabled {
+  cursor: default;
+  background-color: #ddd;
+  border-color: #ccc;
+  box-shadow: none !important;
+}
+
 
 .stepper {
   font-size: 18px;
@@ -40,7 +91,7 @@ body {
 .operation {
   font-size: 40px;
   text-align: center;
-  margin: 30px 0;
+  margin: 60px 0;
 }
 
 .result, .result:focus {
@@ -181,6 +232,25 @@ body {
   box-shadow: 1px 1px 2px #ccc;
 }
 
+.btn-go-to-menu {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #8831fa;
+  padding: 10px 18px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px #999;
+  border: none;
+  display: block;
+  margin: 100px auto 0;
+}
+
+.btn-go-to-menu {
+  box-shadow: 1px 1px 2px #ccc;
+}
+
+
 @media (max-width: 1200px) {
   .btn-send {
     display: none;
@@ -195,4 +265,8 @@ body {
   .keyboard {
     display: none;
   }
+}
+
+.-hide {
+  display: none !important;
 }
